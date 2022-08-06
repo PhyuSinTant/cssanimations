@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	body{
+		font-family: sans-serif;
+		background-color: #22c9c4;
+		height: 100vh;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		margin: 0;
+		overflow: hidden;
+
+	}
+
+	ul{
+		display: flex;
+		/*padding: 0;
+		margin: 20px;*/
+		list-style: none;
+		margin-bottom: 20px;
+
+		position: relative;
+
+		
+
+	}
+
+	.cup{
+		align-self: center;
+		width: 240px;
+		height: 200px;
+		background-color: #fff;
+		border-radius:0 0 20px 20px;
+
+		
+	}
+
+	.hand{
+		width: 50px;
+		height: 55px;
+		/*background-color: red;*/
+		border:22px solid #fff;
+
+		transform: translate(37px,55px);
+		border-radius: 50%;
+	}
+
+	.bottom{
+		width: 370px;
+		height: 18px;
+		background-color: #fff;
+		border-radius: 10px;
+
+
+		position: absolute;
+		top: 104%;
+		left: 65px;
+
+
+	}
+
+	.blur{
+		width: 240px;
+		height: 30px;
+		background-color: #BB6B24;
+
+		position: absolute;
+		top: -16px;
+		left: 135px;
+		border-radius: 50%;
+
+		/*position: relative;*/
+	}
+
+	.ebort1,.ebort2,.ebort3{
+		width: 60px;
+		height: 100px;
+		background-color: #fff;
+
+		position: absolute;
+		
+	}
+
+	.ebort1{
+		top: -50px;
+		left: 180px;
+		filter: blur(15px);
+
+		animation: ebort 5s linear infinite;
+	}
+
+	.ebort2{
+		top: -70px;
+		left: 230px;
+		filter: blur(15px);
+
+		animation: ebort 10s linear infinite;
+	}
+
+	.ebort3{
+		top: -70px;
+		left: 270px;
+		filter: blur(15px);
+
+		animation: ebort 10s linear infinite;
+	}
+
+	.ebort4{
+		top: -70px;
+		left: 340px;
+		filter: blur(15px);
+
+		animation: ebort 10s linear infinite;
+	}
+
+	@keyframes ebort{
+		0%{
+			transform: translateY(0);
+		}
+
+		50%{
+			opacity: 0;
+		}
+
+		100%{
+			transform: translateY(-100px) rotate(20deg);
+			opacity: 0;
+		}
+	}
+
+	
+
+	
+
+
+
+
+
+</style>
+<body>
+	<ul>
+		<li class="hand"></li>
+		<li class="cup"></li>
+		<li class="bottom"></li>
+		<li class="blur"></li>
+		<li class="ebort1"></li>
+		<li class="ebort2"></li>
+		<li class="ebort3"></li>
+		<li class="ebort4"></li>
+
+		
+	</ul>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rain</title>
+</head>
+<style type="text/css">
+	body{
+		background-color: #000;
+		height: 100vh;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		margin: 0;
+		overflow: hidden;
+	}
+
+	ul{
+		width: 100%;
+		height: 100%;
+		padding: 0;
+		margin: 0;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		position: relative;
+
+	}
+
+
+.circle{
+	width: 20px;
+	height: 20px;
+	border:1px solid #fff;
+	border-radius: 50%;
+
+	position: absolute;
+
+	animation-name: circle;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+	ul li{
+		list-style-type: none;
+		width: 3px;
+		height: 30px;
+		background-color: #fff;
+		
+		margin: 10px;
+		opacity: 0;
+
+		position: absolute;
+		
+		
+
+		animation-name: myani;
+		animation-duration: 5s;
+		animation-timing-function: ease-in;
+		animation-iteration-count: infinite;
+		/*animation-fill-mode: forwards;*/
+		
+	}
+
+	ul li:nth-child(1){
+		top: 200px;
+		left: 35%;
+		animation-delay: 1s;
+
+	}
+
+	ul li:nth-child(2){
+		left: 40%;
+		top: 150px;
+		animation-delay: 2s;
+
+	}
+
+	ul li:nth-child(3){
+		left: 45%;
+		top: 130px;
+		animation-delay: 3s;
+
+	}
+
+	ul li:nth-child(4){
+		left: 50%;
+		top: 140px;
+		animation-delay: 4s;
+
+	}
+
+	/*ul li:nth-child(5){
+		left: 55%;
+		top: 180px;
+		animation-delay: 6s;
+
+	}
+
+	
+	ul li:nth-child(6){
+		top: 270px;
+		left: 35%;
+		animation-delay: 7.5s;
+
+	}
+
+	ul li:nth-child(7){
+		left: 40%;
+		top: 320px;
+		animation-delay: 9s;
+
+	}
+
+	ul li:nth-child(8){
+		left: 45%;
+		top: 320px;
+		animation-delay: 10.5s;
+
+	}
+
+	ul li:nth-child(9){
+		left: 50%;
+		top: 320px;
+		animation-delay: 12s;
+
+	}
+
+	ul li:nth-child(10){
+		left: 55%;
+		top: 280px;
+		animation-delay: 13.5s;
+
+	}
+
+	*/
+
+	.circle:nth-child(1){
+		top: 200px;
+		left: 35%;
+		animation-delay: 1s;
+
+	}
+
+	.circle:nth-child(2){
+		left: 40%;
+		top: 150px;
+		animation-delay: 2s;
+
+	}
+
+	.circle:nth-child(3){
+		left: 45%;
+		top: 130px;
+		animation-delay: 3s;
+
+	}
+
+	.circle:nth-child(4){
+		left: 50%;
+		top: 140px;
+		animation-delay: 4s;
+
+	}
+
+	@keyframes myani{
+		0%{
+			transform: translateY(-1000px);
+			/*opacity: 0;*/
+		}
+
+		/*50%{
+			transform: translateY(200px);
+			opacity: 0;
+			
+		}
+*/
+		100%{
+			transform: translateY(0px);
+			opacity: 1;
+		}
+	}
+
+
+@keyframes circle{
+	0%{
+		transform: scale(1);
+	}
+
+	50%{
+		transform: scale(1.5);
+		opacity: 1;
+	}
+	100%{
+		transform: scale(2);
+		opacity: 0;
+	}
+}
+</style>
+<body>
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<!-- <li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li> -->
+		
+		<div class="circle"></div>
+		<div class="circle"></div>
+		<div class="circle"></div>
+		<div class="circle"></div>
+		
+		
+	</ul>
+</body>
+</html>
